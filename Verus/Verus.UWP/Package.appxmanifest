@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+  xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
+  xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2"
+  xmlns:uap6="http://schemas.microsoft.com/appx/manifest/uap/windows10/6"
+  xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4"
+  IgnorableNamespaces="uap mp uap3 iot uap2 uap6 uap4">
+
+  <Identity
+    Name="2e3f1c2d-80c9-4284-b828-74a2adc5b93f"
+    Publisher="CN=6c3cddb9-28aa-4568-87c0-15a148c3d7b3"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="ec0cc741-fd3e-485c-81be-68815c480690" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>Verus.UWP</DisplayName>
+    <PublisherDisplayName>6c3cddb9-28aa-4568-87c0-15a148c3d7b3</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="Verus.UWP.App">
+      <uap:VisualElements
+        DisplayName="Verus.UWP"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="Verus.UWP"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="internetClientServer"/>
+    <Capability Name="allJoyn"/>
+    <uap:Capability Name="voipCall"/>
+    <uap3:Capability Name="backgroundMediaPlayback"/>
+    <Capability Name="codeGeneration"/>
+    <uap:Capability Name="phoneCall"/>
+    <iot:Capability Name="lowLevelDevices"/>
+    <uap2:Capability Name="phoneCallHistoryPublic"/>
+    <uap:Capability Name="objects3D"/>
+    <uap:Capability Name="chat"/>
+    <uap:Capability Name="contacts"/>
+    <uap:Capability Name="removableStorage"/>
+    <uap:Capability Name="sharedUserCertificates"/>
+    <iot:Capability Name="systemManagement"/>
+    <uap:Capability Name="picturesLibrary"/>
+    <uap:Capability Name="videosLibrary"/>
+    <uap6:Capability Name="graphicsCapture"/>
+    <uap4:Capability Name="offlineMapsManagement"/>
+    <uap:Capability Name="enterpriseAuthentication"/>
+    <uap2:Capability Name="spatialPerception"/>
+    <DeviceCapability Name="lowLevel"/>
+    <DeviceCapability Name="pointOfService"/>
+    <DeviceCapability Name="bluetooth"/>
+    <DeviceCapability Name="webcam"/>
+    <DeviceCapability Name="location"/>
+    <DeviceCapability Name="microphone"/>
+    <DeviceCapability Name="proximity"/>
+  </Capabilities>
+</Package>
